@@ -1,0 +1,28 @@
+
+nav {
+	@apply bg-1 text-3 shadow-md; /* Coloring */
+}
+
+nav ul {
+	@apply flex; /* Ordering */
+}
+
+nav li {
+	@apply relative;  /* Ordering */
+}
+
+nav li > a {
+	@apply block px-6 py-4; /* Sizing */
+}
+
+nav li > ul {
+	@apply m-0 w-max;		         /* Sizing */
+	@apply flex-col;                 /* Ordering */
+	@apply bg-1;                   /* Coloring */
+	@apply hidden;                   /* Displaying */
+	@apply left-0 absolute top-full; /* Positioning */
+}
+
+nav li:hover > ul, nav li > ul:hover {
+	@apply block; /* Displaying */
+}

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+
+@media( min-width: 1500px ) {
+	html {
+		font-size: 1.25vw;
+	}
+}
+
+a {
+	@apply text-3 hover:text-4; /* Coloring */
+}
+
+@tailwind utilities;
