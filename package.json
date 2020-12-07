@@ -12,7 +12,7 @@
     "tsc": "tsc",
     "watch": "tsc --watch",
     "dev": "preact watch --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender",
-    "build": "preact build --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender && cp build/*.css ./"
+    "build": "preact build --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender && cp build/*.css ./build.css"
   },
   "devDependencies": {
     "autoprefixer": "^9",
