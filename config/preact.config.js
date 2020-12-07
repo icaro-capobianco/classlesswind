@@ -3,6 +3,9 @@ import path from 'path';
 
 export default {
     webpack(config, env, helpers) {
+        if(env.production){
+            config.output.publicPath = "/classlesswind/";
+        }
         if ( config.module && config.module.rules ) {
             for ( const rule of config.module.rules ) {
                 if ( rule.use ) {
