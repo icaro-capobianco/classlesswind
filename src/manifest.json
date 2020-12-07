@@ -1,7 +1,7 @@
 {
-  "name": "ts-project-template",
-  "short_name": "ts-project-template",
-  "start_url": "/",
+  "name": "classlesswind",
+  "short_name": "classlesswind",
+  "start_url": "/classlesswind",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
