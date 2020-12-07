@@ -6,23 +6,23 @@ export default function Navigation() {
 		<nav id="nav" >
 			<ul>
 				<li>
-					<a href="#nav">
-						Navbar
+					<a href="#first">
+						First
 					</a>
 				</li>
 				<li>
-					<a href="/Home">
-						Home
+					<a href="#">
+						Dropdown
 					</a>
 					<ul>
 						<li>
-							<a href="/Home">
-								Take me home
+							<a href="#second">
+								Second
 							</a>
 						</li>
 						<li>
-							<a href="/Home">
-								Country Roads
+							<a href="#third">
+								Third
 							</a>
 						</li>
 					</ul>
