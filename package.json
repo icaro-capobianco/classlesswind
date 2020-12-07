@@ -2,20 +2,24 @@
   "name": "ts-project-template",
   "version": "1.0.0",
   "author": "Ícaro C. Capobianco",
+  "homepage": "https://icaro-capobianco.github.io/classlesswind",
   "license": "MIT",
   "main": "build.css",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/icaro-capobianco/classlesswind"
+    "type": "git",
+    "url": "https://github.com/icaro-capobianco/classlesswind"
   },
   "scripts": {
     "tsc": "tsc",
     "watch": "tsc --watch",
     "dev": "preact watch --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender",
-    "build": "preact build --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender && cp build/*.css ./build.css"
+    "build": "preact build --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender && cp build/*.css ./build.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "autoprefixer": "^9",
+    "gh-pages": "^3.1.0",
     "postcss": "^7",
     "postcss-loader": "^4.1.0",
     "preact-cli": "^3.0.3",
